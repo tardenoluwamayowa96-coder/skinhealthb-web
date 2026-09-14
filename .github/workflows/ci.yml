@@ -1,0 +1,51 @@
+# Skinhealthb — contrôle qualité à chaque push / pull request.
+# Ne déploie pas. Le déploiement est dans deploy.yml (main) et via Vercel.
+
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: Typecheck · tests · build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NODE_ENV: production
+      # Pas de DATABASE_URL ici : le build skippe migrate (PGLite en preview).
+      # La prod applique les migrations via deploy.yml / Vercel.
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Installer
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: État des variables (sans valeurs)
+        run: npm run env:status
+
+      - name: Tests
+        run: npm test
+
+      - name: Build production
+        run: npm run build
