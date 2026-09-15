@@ -112,9 +112,8 @@ function Commande() {
     }
   }, [intl]);
 
-  if (isPending) return <div className="h-40 animate-pulse bg-surface-2" />;
-  if (!user) return <RedirectToSignIn />;
-  if (!items.length) return <Navigate to="/panier" />;
+if (!items.length) return <Navigate to="/panier" />;
+  
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
