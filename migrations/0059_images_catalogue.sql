@@ -1,0 +1,14 @@
+UPDATE products SET image_url = 'https://skinhealthb.com/images/medicube-vita-c.jpg' WHERE slug = 'medicube-deep-vita-c-serum';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/anua-niacinamide.jpg' WHERE slug = 'anua-niacinamide-10-txa-4-serum';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/boj-relief-sun.jpg' WHERE slug = 'beauty-of-joseon-relief-sun';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/boj-glow-deep.jpg' WHERE slug = 'beauty-of-joseon-glow-deep-serum';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/skin1004-hyalu-cica.jpg' WHERE slug = 'skin1004-hyalu-cica-sun-serum';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/skin1004-ampoule-foam.jpg' WHERE slug = 'skin1004-centella-ampoule-foam';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/haruharu-airyfit.jpg' WHERE slug = 'haruharu-airyfit-sunscreen';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/haruharu-toner.jpg' WHERE slug = 'haruharu-hyaluronic-toner';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/mixsoon-bean.jpg' WHERE slug = 'mixsoon-bean-essence';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/torriden-cream.jpg' WHERE slug = 'torriden-dive-in-cream';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/laneige-lip-mask.jpg' WHERE slug = 'laneige-lip-sleeping-mask-mini';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/eos-coconut.jpg' WHERE slug = 'eos-body-wash-coconut';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/eos-vanilla.jpg' WHERE slug = 'eos-body-wash-vanilla';
+UPDATE products SET image_url = 'https://skinhealthb.com/images/kojie-san-soap.jpg' WHERE slug = 'kojie-san-soap-pack-3';
