@@ -1,0 +1,14 @@
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80' WHERE slug = 'medicube-deep-vita-c-serum';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1608248597359-2184138e64a1?auto=format&fit=crop&w=600&q=80' WHERE slug = 'anua-niacinamide-10-txa-4-serum';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80' WHERE slug = 'beauty-of-joseon-relief-sun';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80' WHERE slug = 'beauty-of-joseon-glow-deep-serum';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=600&q=80' WHERE slug = 'skin1004-hyalu-cica-sun-serum';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1556228722-d0b5de77a8be?auto=format&fit=crop&w=600&q=80' WHERE slug = 'skin1004-centella-ampoule-foam';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=600&q=80' WHERE slug = 'haruharu-airyfit-sunscreen';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1608248597359-2184138e64a1?auto=format&fit=crop&w=600&q=80' WHERE slug = 'haruharu-hyaluronic-toner';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80' WHERE slug = 'mixsoon-bean-essence';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80' WHERE slug = 'torriden-dive-in-cream';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80' WHERE slug = 'laneige-lip-sleeping-mask-mini';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80' WHERE slug = 'eos-body-wash-coconut';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80' WHERE slug = 'eos-body-wash-vanilla';
+UPDATE products SET image_url = 'https://images.unsplash.com/photo-1607006314144-884d5e9b9c9f?auto=format&fit=crop&w=600&q=80' WHERE slug = 'kojie-san-soap-pack-3';
