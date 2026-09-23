@@ -116,15 +116,38 @@ export const listProducts = createServerFn({ method: "GET" })
     if (data.sort === "price_desc") order = "p.price_xof desc";
     if (data.sort === "new") order = "p.is_new desc, p.id desc";
 
-    return sql.query<ProductCard>(
+        const rows = await sql.query<ProductCard>(
       `select ${CARD_SELECT}
-       from products p
-       join brands b on b.id = p.brand_id
-       join categories c on c.id = p.category_id
-       where ${where.join(" and ")}
-       order by ${order}`,
+      from products p
+      join brands b on b.id = p.brand_id
+      join categories c on c.id = p.category_id
+      where ${where.join(" and ")}
+      order by ${order}`,
       params,
     );
+
+    const imageMap: Record<string, string> = {
+      "beauty-of-joseon-relief-sun": "/products/09_0805_Relief_sun_EU_UK_f73e0d53-3f10-4939-b886-734f50e4d51c.jpg",
+      "medicube-deep-vita-c-serum": "/products/MEDICUBE_Deep_Vita_C_Capsule_Serum_-_01.png",
+      "skin1004-hyalu-cica-sun-serum": "/products/skin1004-hyalu-cica-water-fit-sun-serum-uv-1233347068.jpg",
+      "laneige-lip-sleeping-mask-mini": "/products/laneige-lip-sleeping-mask (1).webp",
+      "mixsoon-bean-essence": "/products/9a1a280bd5a3ca4f3c9fc6bba2e35d0e.png",
+      "haruharu-airyfit-sunscreen": "/products/1705555626241_c395e97813374d3c93a9a5b8cbcb3826.jpg",
+      "haruharu-hyaluronic-toner": "/products/Haruharu_Wonder_Black_Rice_Hyaluronic_Toner_Fragrance_Free_150ml.png",
+      "anua-niacinamide-10-txa-4-serum": "/products/IMG_5126.png",
+      "beauty-of-joseon-glow-deep-serum": "/products/Beauty-of-Joseon-Glow-Deep-Serum-Rice-and-Alpha-Arbutin-pigmentfolt-halvanyito-szerum.png",
+      "skin1004-centella-ampoule-foam": "/products/6_69eb6d81-7b57-4af2-b6e1-2eaf296304e1.png",
+      "torriden-dive-in-cream": "/products/jar_-07.jpg",
+      "eos-body-wash-vanilla": "/products/eos-body-wash-Vanilla-Cashmere.jpg",
+      "eos-body-wash-coconut": "/products/eos-shea-better-cashmere-body-wash-coconut-waters-70052923343231.png",
+      "kojie-san-soap-pack-3": "/products/assets%252Fimages%252F1%2520packs%2520ks-kojisansoapx3-100-adam2019%2520%25281%2529__50015.1743493110.386.513__78787.1756205883.jpg",
+    };
+
+    return rows.map((p) => ({
+      ...p,
+      image_url: imageMap[p.slug] || p.image_url,
+    }));
+
   });
 
 export const getProduct = createServerFn({ method: "GET" })
