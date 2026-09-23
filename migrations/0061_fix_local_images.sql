@@ -1,0 +1,14 @@
+UPDATE products SET image_url = '/products/acnemy-postzit.webp' WHERE slug = 'medicube-deep-vita-c-serum';
+UPDATE products SET image_url = '/products/acnemy-zitcalm-creme.webp' WHERE slug = 'anua-niacinamide-10-txa-4-serum';
+UPDATE products SET image_url = '/products/acnemy-postzit.webp' WHERE slug = 'beauty-of-joseon-relief-sun';
+UPDATE products SET image_url = '/products/acnemy-zitcalm-creme.webp' WHERE slug = 'beauty-of-joseon-glow-deep-serum';
+UPDATE products SET image_url = '/products/acnemy-postzit.webp' WHERE slug = 'skin1004-hyalu-cica-sun-serum';
+UPDATE products SET image_url = '/products/acnemy-zitcalm-creme.webp' WHERE slug = 'skin1004-centella-ampoule-foam';
+UPDATE products SET image_url = '/products/acnemy-postzit.webp' WHERE slug = 'haruharu-airyfit-sunscreen';
+UPDATE products SET image_url = '/products/acnemy-zitcalm-creme.webp' WHERE slug = 'haruharu-hyaluronic-toner';
+UPDATE products SET image_url = '/products/acnemy-postzit.webp' WHERE slug = 'mixsoon-bean-essence';
+UPDATE products SET image_url = '/products/acnemy-zitcalm-creme.webp' WHERE slug = 'torriden-dive-in-cream';
+UPDATE products SET image_url = '/products/acnemy-postzit.webp' WHERE slug = 'laneige-lip-sleeping-mask-mini';
+UPDATE products SET image_url = '/products/acnemy-zitcalm-creme.webp' WHERE slug = 'eos-body-wash-coconut';
+UPDATE products SET image_url = '/products/acnemy-zitcalm-creme.webp' WHERE slug = 'eos-body-wash-vanilla';
+UPDATE products SET image_url = '/products/acnemy-postzit.webp' WHERE slug = 'kojie-san-soap-pack-3';
