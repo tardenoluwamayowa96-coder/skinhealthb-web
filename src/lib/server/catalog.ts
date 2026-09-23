@@ -140,7 +140,8 @@ export const listProducts = createServerFn({ method: "GET" })
       "torriden-dive-in-cream": "/products/jar_-07.jpg",
       "eos-body-wash-vanilla": "/products/eos-body-wash-Vanilla-Cashmere.jpg",
       "eos-body-wash-coconut": "/products/eos-shea-better-cashmere-body-wash-coconut-waters-70052923343231.png",
-      "kojie-san-soap-pack-3": "/products/assets%252Fimages%252F1%2520packs%2520ks-kojisansoapx3-100-adam2019%2520%25281%2529__50015.1743493110.386.513__78787.1756205883.jpg",
+          "kojie-san-soap-pack-3": "/products/assets%25252Fimages%25252F1%252520packs%252520ks-kojisansoapx3-100-adam2019%252520%2525281%252529__50015.1743493110.386.513__78787.1756205883.jpg",
+
     };
 
     return rows.map((p) => ({
