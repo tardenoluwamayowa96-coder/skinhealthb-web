@@ -22,7 +22,7 @@ export function localTogoDigits(value: string): string {
 }
 
 export function isTogoMobile(value: string): boolean {
-  return localTogoDigits(value).length === 8;
+  return localTogoDigits(value).length >= 8;
 }
 
 const INTL_LEN: Record<string, { dial: string; local: number }> = {
