@@ -11,4 +11,5 @@ UPDATE products SET image_url = '/products/6_69eb6d81-7b57-4af2-b6e1-2eaf296304e
 UPDATE products SET image_url = '/products/jar_-07.jpg' WHERE slug = 'torriden-dive-in-cream';
 UPDATE products SET image_url = '/products/eos-body-wash-Vanilla-Cashmere.jpg' WHERE slug = 'eos-body-wash-vanilla';
 UPDATE products SET image_url = '/products/eos-shea-better-cashmere-body-wash-coconut-waters-70052923343231.png' WHERE slug = 'eos-body-wash-coconut';
-UPDATE products SET image_url = '/products/assets%252Fimages%252F1%2520packs%2520ks-kojisansoapx3-100-adam2019%2520%25281%2529__50015.1743493110.386.513__78787.1756205883.jpg' WHERE slug = 'kojie-san-soap-pack-3';
+UPDATE products SET image_url = '/products/Kojie_Savon_Eclaircissant_100g_3pcs__42928.1699407975 (2).jpg' WHERE slug = 'kojie-san-soap-pack-3';
+
