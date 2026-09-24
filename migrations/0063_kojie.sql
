@@ -1,0 +1,1 @@
+UPDATE products SET image_url = '/products/Kojie_Savon_Eclaircissant_100g_3pcs__42928.1699407975 (2).jpg' WHERE slug = 'kojie-san-soap-pack-3';
