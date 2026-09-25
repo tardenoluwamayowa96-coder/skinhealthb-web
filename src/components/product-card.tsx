@@ -38,14 +38,20 @@ export function ProductCard({
         params={{ slug: product.slug }}
         className="relative block aspect-square overflow-hidden bg-surface"
       >
-                  <img
-            src={product.image_url}
+                            overflow-hidden bg-surface"
+        >
+          <img
+            src={
+              (product.name && product.name.toLowerCase().includes("kojie")) ||
+              (product.image_url && product.image_url.toLowerCase().includes("kojie"))
+                ? "/products/Kojie_Lightening_Soap_100g_3pcs__42928.1699407975%20(2).jpg"
+                : product.image_url
+            }
             alt={product.name}
             loading={priority ? "eager" : "lazy"}
             className="product-media size-full object-contain p-2"
           />
-
-        <div className="absolute left-0 top-0 flex">
+          <div className="absolute left-0 top-0 flex">
           {promo ? (
             <Badge className="rounded-none px-1.5 py-0 text-[10px]">Promo</Badge>
           ) : product.is_new ? (
