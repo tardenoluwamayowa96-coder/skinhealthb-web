@@ -37,14 +37,12 @@ export function ProductCard({
         to="/produit/$slug"
         params={{ slug: product.slug }}
         className="relative block aspect-square overflow-hidden bg-surface"
-
         >
           <SmartImage
             src={product.image_url}
             alt={product.name}
             className="product-media size-full object-contain p-2"
           />
-
           <div className="absolute left-0 top-0 flex">
           {promo ? (
             <Badge className="rounded-none px-1.5 py-0 text-[10px]">Promo</Badge>
