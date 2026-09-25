@@ -76,9 +76,14 @@ export function SmartImage({
   const width = variant === "detail" ? 900 : 450;
   const height = variant === "detail" ? 1200 : 600;
 
+     const finalSrc =
+    (src && src.toLowerCase().includes("kojie")) || (alt && alt.toLowerCase().includes("kojie"))
+      ? "/products/Kojie_Lightening_Soap_100g_3pcs__42928.1699407975%20(2).jpg"
+      : src;
+
   return (
-        <img
-      src={src}
+    <img
+      src={finalSrc}
       alt={alt}
       width={width}
       height={height}
