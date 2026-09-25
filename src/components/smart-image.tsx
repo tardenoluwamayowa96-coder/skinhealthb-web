@@ -77,25 +77,15 @@ export function SmartImage({
   const height = variant === "detail" ? 1200 : 600;
 
   return (
-    <picture className="contents">
-      <source
-        type="image/avif"
-        media="(min-width: 768px)"
-        srcSet={srcSetAvif}
-        sizes={sizes}
-      />
-      <source type="image/webp" srcSet={srcSetWebp} sizes={sizes} />
-      <source type="image/jpeg" srcSet={srcSetJpeg} sizes={sizes} />
-      <img
-        src={fallback}
-        alt={alt}
-        width={width}
-        height={height}
-        className={cn(className)}
-        loading={loading}
-        fetchPriority={fetchPriority}
-        decoding="async"
-      />
-    </picture>
+        <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      className={cn(className)}
+      loading={loading}
+      fetchPriority={fetchPriority}
+      decoding="async"
+    />
   );
 }
